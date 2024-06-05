@@ -1,0 +1,7 @@
+postgres: 
+
+docker run -e POSTGRES_PASSWORD=pinito1 -p 5432:5432 postgres
+
+pgadmin:
+
+docker run -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=pinito1@pinito.com -e PGADMIN_DEFAULT_PASWORD=pass123 dpage/pgadmin4
